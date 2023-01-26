@@ -13,6 +13,7 @@ function createTask() {
   let edit = document.createElement("i");
   let remove = document.createElement("i");
   let divAw = document.createElement("div");
+  let input = document.createElement("input");
   check.className = "fa-solid fa-circle-check";
   edit.className = "fa-solid fa-wrench";
   remove.className = "fa-solid fa-trash";
@@ -32,7 +33,6 @@ function createTask() {
     addTask.remove()
   })
   edit.addEventListener("click", function () {
-    let input = document.createElement("input");
     input.className = "class-test";
     input.value = taskName.innerHTML;
     taskName.parentNode.replaceChild(input, taskName);
